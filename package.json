@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "instal":"concurrently \"cd api && npm install\" \"cd frontend && npm install\"",
-    "start":"concurrently \"cd api && npm run dev\" \"cd frontend && npm start\"",
+    "instal": "concurrently \"cd api && npm install\" \"cd frontend && npm install\"",
+    "start": "concurrently \"cd api && npm run dev\" \"cd frontend && npm start\"",
     "build": "concurrently \"cd api && npm run build\" \"cd frontend && npm run build\""
   },
   "author": "Prajwal R",
