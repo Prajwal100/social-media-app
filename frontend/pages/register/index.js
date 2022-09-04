@@ -1,8 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
+import Link from "next/link";
+export default function Register() {
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -14,26 +11,34 @@ export default function Home() {
         </div>
         <div className="loginRight">
           <form className="loginBox">
+            <input placeholder="Username" required className="loginInput" />
             <input
               placeholder="Email"
-              type="email"
               required
               className="loginInput"
+              type="email"
             />
             <input
               placeholder="Password"
-              type="password"
               required
-              minLength="6"
               className="loginInput"
+              type="password"
+              minLength="6"
+            />
+            <input
+              placeholder="Password Again"
+              required
+              className="loginInput"
+              type="password"
             />
             <button className="loginButton" type="submit">
-              Login
+              Sign Up
             </button>
-            <span className="loginForgot">Forgot Password?</span>
-            <button className="loginRegisterButton">
-              Create a New Account
-            </button>
+            <span className="loginForgot">Already have an account?</span>
+
+            <Link href="/login">
+              <button className="loginRegisterButton">Log into Account</button>
+            </Link>
           </form>
         </div>
       </div>

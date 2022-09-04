@@ -1,8 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
+import Link from "next/link";
+export default function Login() {
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -31,9 +28,11 @@ export default function Home() {
               Login
             </button>
             <span className="loginForgot">Forgot Password?</span>
-            <button className="loginRegisterButton">
-              Create a New Account
-            </button>
+            <Link href="/register">
+              <button className="loginRegisterButton">
+                Create a New Account
+              </button>
+            </Link>
           </form>
         </div>
       </div>
