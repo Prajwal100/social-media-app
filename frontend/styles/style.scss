@@ -1,3 +1,17 @@
 @import "pages/index.scss";
 
-@import "components/Header.scss"
+
+.homeContainer{
+    display: flex;
+    width: 100%;
+}
+
+@import "components/header.scss";
+@import "components/left-sidebar.scss";
+@import "components/feed.scss";
+@import "components/post.scss";
+@import "components/online.scss";
+@import "components/share.scss";
+
+@import "components/right-sidebar.scss";
+

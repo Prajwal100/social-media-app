@@ -39,7 +39,7 @@ export default function Header() {
           </div>
         </div>
         <Link href="/profile">
-          <img src="" alt="" className="topbarImg" />
+          <img src="/assets/person/7.jpeg" alt="" className="topbarImg" />
         </Link>
       </div>
     </div>
